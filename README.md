@@ -1,6 +1,6 @@
 #Bash by Examples
 
-* [Change current directory to parent](changeDirectory.sh)
+* [Change current directory to parent](change-directory.sh)
 ```bash
 current_directory=`pwd`
 parent_directory="$current_directory/../"
