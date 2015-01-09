@@ -2,7 +2,7 @@
 #
 # Switch statement
 
-case "$1" in
+case "${1}" in
   1)
     echo "one"
     ;;
