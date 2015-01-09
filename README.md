@@ -1,5 +1,9 @@
 #Bash by Examples
 
+##Contents
+* [Change current directory to parent](#change-current-directory-to-parent-problem)
+* [Switch statement](#switch-statement)
+
 ## [Change current directory to parent](change-directory.sh) PROBLEM
 ```bash
 current_directory=`pwd`
