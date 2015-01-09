@@ -1,15 +1,15 @@
 #Bash by Examples
 
-* [Change current directory to parent](change-directory.sh) PROBLEM
+## [Change current directory to parent](change-directory.sh) PROBLEM
 ```bash
 current_directory=`pwd`
 parent_directory="$current_directory/../"
 cd $parent_directory
 ```
 
-* [Switch statement](switch-statement.sh)
+## [Switch statement](switch-statement.sh)
 ```bash
-case "$1" in
+case "${1}" in
   1)
     echo "one"
     ;;
@@ -27,7 +27,7 @@ case "$1" in
     ;;
 esac
 ```
-Test:
+###Test:
 ```bash
 $ ./switch-statement.sh 1
 one
