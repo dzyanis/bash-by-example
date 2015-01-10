@@ -2,6 +2,7 @@
 
 ##Contents
 * [Change current directory to parent](#change-current-directory-to-parent-problem)
+* [Conditional statement](#conditional-statement)
 * [Switch statement](#switch-statement)
 * [Functions](#functions)
 
@@ -62,7 +63,7 @@ $ ./functions.sh
 Hello world!
 ```
 
-##Conditional statement
+##[Conditional statement](conditional-statement.sh)
 ```bash
 if [ "${1}" -eq 1 ]; then
   echo "number one"
