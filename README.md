@@ -62,6 +62,27 @@ $ ./functions.sh
 Hello world!
 ```
 
+##Conditional statement
+```bash
+if [ "${1}" -eq 1 ]; then
+  echo "number one"
+elif [ "${1}" -eq 2 ]; then
+  echo "number two"
+else
+  echo "you typed '${1}'"
+fi
+```
+
+###Test
+```bash
+$ ./conditional-statement.sh 1
+number one
+$ ./conditional-statement.sh 2
+number two
+$ ./conditional-statement.sh 3
+you typed '3'
+```
+
 ## Links
 * [BASH Frequently Asked Questions](http://mywiki.wooledge.org/BashFAQ)
 * [Google Shell Style Guide](https://google-styleguide.googlecode.com/svn/trunk/shell.xml)
