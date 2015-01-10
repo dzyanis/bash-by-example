@@ -3,6 +3,7 @@
 ##Contents
 * [Change current directory to parent](#change-current-directory-to-parent-problem)
 * [Switch statement](#switch-statement)
+* [Functions](#functions)
 
 ## [Change current directory to parent](change-directory.sh) PROBLEM
 ```bash
@@ -43,6 +44,22 @@ $ ./switch-statement.sh 3
 number between three and nine
 $ ./switch-statement.sh test
 default
+```
+
+##[Functions](functions.sh)
+```bash
+function print_hello() {
+    local str="Hello ${1}!"
+    echo $str
+}
+
+print_hello "world"
+```
+
+###Test
+```bash
+$ ./functions.sh
+Hello world!
 ```
 
 ## Links
