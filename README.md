@@ -4,6 +4,7 @@
 * [Change current directory to parent](#change-current-directory-to-parent-problem)
 * [Conditional statement](#conditional-statement)
 * [Switch statement](#switch-statement)
+* [Select statement](#select-statement)
 * [Functions](#functions)
 
 ## [Change current directory to parent](change-directory.sh) PROBLEM
@@ -82,6 +83,29 @@ $ ./conditional-statement.sh 2
 number two
 $ ./conditional-statement.sh 3
 you typed '3'
+```
+
+##[Select statement](select-statement.sh)
+```bash
+echo "What is your favorite operating system?"
+select var in "Linux" "Gnu" "FreeBSD" "Other"; do
+  echo "You selected $var"
+break
+done
+  echo "Bye!"
+```
+
+###Test
+```bash
+$ ./select-statement.sh
+What is your favorite operating system?
+1) Linux
+2) Gnu
+3) FreeBSD
+4) Other
+#? 2
+You selected Gnu
+Bye!
 ```
 
 ## Links
