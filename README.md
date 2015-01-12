@@ -5,6 +5,7 @@
 * [Conditional statement](#conditional-statement)
 * [Switch statement](#switch-statement)
 * [Select statement](#select-statement)
+* [Loop operators](#loop-operators)
 * [Functions](#functions)
 
 ## [Change current directory to parent](change-directory.sh) PROBLEM
@@ -106,6 +107,57 @@ What is your favorite operating system?
 #? 2
 You selected Gnu
 Bye!
+```
+
+##[Loop operators](loop-operators.sh)
+
+For Loop
+```bash
+for key in $(ls /)
+do
+  echo $key
+done
+```
+
+Infinite While Loop
+```bash
+while :
+do
+  echo "Hit Ctrl+C to stop!"
+done
+```
+
+While Loop
+```bash
+num=1
+while [ $num -le 3 ] ;
+do
+  echo "Welcome $num times"
+  num=$(( $num + 1 ))
+done
+```
+
+Test
+```bash
+Welcome 1 times
+Welcome 2 times
+Welcome 3 times
+```
+
+Until Loop
+```bash
+until [ $num -le 1 ];
+do
+  echo "Welcome $num times"
+  num=$(( $num - 1 ))
+done
+```
+
+Test
+```bash
+Welcome 4 times
+Welcome 3 times
+Welcome 2 times
 ```
 
 ## Links
